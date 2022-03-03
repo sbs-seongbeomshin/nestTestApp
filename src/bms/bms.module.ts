@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Bms, BmsSchema } from './schemas/bms.schema';
+import { Bms, BmsSchema } from '../schemas/bms.schema';
 import { BmsService } from './bms.service';
 import { BmsController } from './bms.controller';
 

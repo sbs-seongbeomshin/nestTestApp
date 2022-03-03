@@ -2,7 +2,8 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { BmsModule } from './bms.module';
+import { BmsModule } from './bms/bms.module';
+import { InverterModule } from './inverter/inverter.module';
 
 @Module({
   imports: [
@@ -12,7 +13,8 @@ import { BmsModule } from './bms.module';
     MongooseModule.forRoot('mongodb://localhost:20032/inverter', {
       connectionName: 'inverter',
     }),
-    BmsModule
+    BmsModule,
+    InverterModule
   ],
   controllers: [AppController],
   providers: [AppService],

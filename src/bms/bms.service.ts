@@ -1,7 +1,7 @@
 import { Connection, Model } from 'mongoose';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Bms, BmsDocument } from './schemas/bms.schema';
+import { Bms, BmsDocument } from '../schemas/bms.schema';
 
 @Injectable()
 export class BmsService {
